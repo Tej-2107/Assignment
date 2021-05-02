@@ -1,0 +1,41 @@
+<div id="map"></div>
+
+
+
+<h1>Table Format:</h1>
+<hr>
+
+<table id="users">
+  <tr>
+    
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+</table>
+
+<h1>Table Format:</h1>
+<hr>
+<table id="users1">
+  <tr>
+    <th *ngFor = "let column of titles">
+        {{column}}
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of record">
+    <td *ngFor = "let column of titles">
+        {{row[column]}}
+    </td>
+  </tr>
+</table>
+
+
+
+  
